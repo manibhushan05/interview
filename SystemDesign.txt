@@ -1,0 +1,90 @@
+1)vertical-scaling-vs-horizontal-scaling
+	http://www.vcloudnews.com/database-scalability-vertical-scaling-vs-horizontal-scaling/
+2)Cap theorem
+https://www.youtube.com/watch?v=K12oQCzjPxE
+3)Consistent Hashing
+https://www.youtube.com/watch?v=zaRkONvyGr8
+https://www.youtube.com/watch?v=Y6Ev8GIlbxc
+
+Cache Ploicy
+https://github.com/ben-manes/caffeine
+http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html
+
+
+4) Acid vs Base 
+https://www.johndcook.com/blog/2009/07/06/brewer-cap-theorem-base/
+
+
+5)Sharding
+https://www.youtube.com/watch?v=9sXYEM5s15A
+
+
+6)Optimistic vs Pessimistic locking
+https://www.youtube.com/watch?v=R-iX1r_7UY0
+https://www.baeldung.com/jpa-pessimistic-locking
+
+
+
+7)Transaction
+https://www.youtube.com/watch?v=CTCAo89fcQw
+
+8)Two Phase Commit , Three Phase Commit and Distributed Transaction
+https://www.youtube.com/watch?v=of2Gk-shBqo&t=49s
+https://www.youtube.com/watch?v=5vG0du-0xwg
+https://www.youtube.com/watch?v=WnZ7IcaN_JA
+
+
+9)OSI Layer and TCP Layer
+https://www.youtube.com/watch?v=y9PG-_ZNbWg
+
+10)IPV4 vs IPV6
+https://www.youtube.com/watch?v=8npT9AALbrI&t=269s
+
+11)TCP vs UDP
+https://www.youtube.com/watch?v=Vdc8TCESIg8
+https://www.geeksforgeeks.org/differences-between-tcp-and-udp/
+
+4)Distributed Systems Architectural Patterns 
+https://www.youtube.com/watch?v=tpspO9K28PM
+
+
+Distributed Transaction
+https://medium.com/@ijayakantha/microservices-the-saga-pattern-for-distributed-transactions-c489d0ac0247
+
+Event Driven Architecture
+https://www.youtube.com/watch?v=XohG9yQe3Ps
+
+
+Rate Limiter
+https://www.youtube.com/watch?v=mhUQe4BKZXs&t=1189s
+https://www.youtube.com/watch?v=FU4WlwfS3G0
+http://highscalability.com/blog/2012/4/17/youtube-strategy-adding-jitter-isnt-a-bug.html
+https://www.ably.io/blog/distributed-rate-limiting-scale-your-platform?gi=4024cdfafaf1
+
+Tiny URl
+https://www.youtube.com/watch?v=JQDHz72OA3c
+https://www.youtube.com/watch?v=fMZMm_0ZhK4
+https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR
+
+Distributed Message Queue
+https://www.youtube.com/watch?v=iJLL-KPqBpM
+https://www.freecodecamp.org/news/a-dummys-guide-to-distributed-queues-2cd358d83780/
+https://www.youtube.com/watch?v=TeC7FD8wrRQ&list=UUyaZFIEP_DPYFiGq8SqWedg&index=25
+https://www.youtube.com/watch?v=XndpZCyRIXw&list=UUyaZFIEP_DPYFiGq8SqWedg&index=22
+https://blog.usejournal.com/a-futuristic-view-of-building-distributed-systems-with-messaging-560d0652513a
+
+Notification Service
+https://www.youtube.com/watch?v=bBTPZ9NdSk8
+https://www.youtube.com/watch?v=_63IA-Ly0gY
+
+Count Min Sketch
+https://www.youtube.com/watch?v=kx-XDoPjoHw
+https://www.youtube.com/watch?v=ibxXO-b14j4
+https://github.com/FreemanZhang/system-design/blob/master/topk.md
+https://leetcode.com/discuss/interview-question/system-design/124702/design-a-service-to-calculate-the-top-k-listened-songs-in-past-24-hours
+
+
+Distributed Cache
+https://www.youtube.com/watch?v=UH7wkvcf0ys&t=1233s
+https://www.youtube.com/watch?v=iuqZvajTOyA
+https://study.com/academy/lesson/how-distributed-cache-works-design-architecture.html
