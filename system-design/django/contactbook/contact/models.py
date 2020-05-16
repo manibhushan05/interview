@@ -12,7 +12,7 @@ class AuditLog(models.Model):
         settings.AUTH_USER_MODEL,
         verbose_name='Created by',
         blank=True, null=True,
-        related_name="%(app_label)s_%(class)s_created",
+        related_name="%(app_label)s_%(class)s_created_by",
         on_delete=models.SET_NULL)
     last_modified_at = models.DateTimeField(
         'Last modified at',
@@ -22,7 +22,7 @@ class AuditLog(models.Model):
         settings.AUTH_USER_MODEL,
         verbose_name='Last modified by',
         blank=True, null=True,
-        related_name="%(app_label)s_%(class)s_last_modified",
+        related_name="%(app_label)s_%(class)s_last_modified_by",
         on_delete=models.SET_NULL)
 
     deleted = models.BooleanField(default=False)
