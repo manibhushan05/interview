@@ -1,6 +1,6 @@
 import operator  # For sorting my dictionary
 
-
+# http://www.pinchofintelligence.com/calculating-how-to-split-your-bills/
 def simplify_bill(bills):
     result = []
     while sorted(bills.items(), key=operator.itemgetter(1), reverse=True)[0][1] > 0.001:
@@ -24,5 +24,5 @@ def simplify_bill(bills):
 
 bills = {"Kim": 392.08, "Peter": 71.81, "Mike": 48.09, "Roland": 5.91, "Yorick": 0.0, "Elvira": -74.37,
          "Lisette": -103.22, "Robert": -340.30}
-bills = {"mani": 50, "deepak": -30, "dipen": -20}
+bills = {"mani": -50, "deepak": 30, "dipen": 20}
 print(simplify_bill(bills))
