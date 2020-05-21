@@ -1,13 +1,14 @@
 import operator  # For sorting my dictionary
 
+
 # http://www.pinchofintelligence.com/calculating-how-to-split-your-bills/
 def simplify_bill(bills):
     result = []
     while sorted(bills.items(), key=operator.itemgetter(1), reverse=True)[0][1] > 0.001:
         sorted_bills = sorted(bills.items(), key=operator.itemgetter(1), reverse=True)
 
-        diff_highest_lowest = sorted_bills[0][1] + sorted_bills[-1][
-            1]  # Note that array[-1] is the last element of an array (for us: lowest value)
+        diff_highest_lowest = sorted_bills[0][1] + sorted_bills[-1][1]
+        # Note that array[-1] is the last element of an array (for us: lowest value)
         if diff_highest_lowest > 0:  # In this case the lowest amount can't fill the highest amount
             result.append({"payer": sorted_bills[-1][0], "receiver": sorted_bills[0][0], "amount": str(
                 abs(sorted_bills[-1][1]))})

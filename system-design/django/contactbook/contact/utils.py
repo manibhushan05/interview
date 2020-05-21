@@ -1,8 +1,17 @@
 import random
 import string
+from rest_framework import serializers
 
 from django.core.exceptions import FieldError
 from rest_framework.response import Response
+
+from contact.models import Contact
+
+
+class CreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Contact
+        fields = '__all__'
 
 
 def success_response(status, msg, data, *args, **kwargs):
