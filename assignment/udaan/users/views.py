@@ -2,6 +2,7 @@ from datetime import datetime
 
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import viewsets, status, generics, filters
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 
 from users.filters import CustomUserFilter
@@ -18,6 +19,7 @@ class CustomUserListView(generics.ListAPIView):
     filter_class = CustomUserFilter
     ordering_fields = ('-id',)
     search_fields = ('id', 'name')
+    permission_classes = [AllowAny]
 
     def list(self, request, *args, **kwargs):
         """
@@ -29,6 +31,7 @@ class CustomUserListView(generics.ListAPIView):
         queryset = self.filter_queryset(self.get_queryset())
 
         data = {"status": "Success", "msg": "User List"}
+        print(self.get_queryset())
         page = self.paginate_queryset(queryset)
         if page is not None:
             serializer = self.get_serializer(page, many=True)
@@ -44,6 +47,7 @@ class CustomUserListView(generics.ListAPIView):
 
 
 class UserViewSet(viewsets.ViewSet):
+    permission_classes = [AllowAny]
 
     def create(self, request):
         request.data["created_by"] = self.request.user.username
