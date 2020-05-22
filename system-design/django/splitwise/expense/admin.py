@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from expense.models import Expense, ExpenseUser, Repayment
+
+admin.site.register(Expense)
+admin.site.register(ExpenseUser)
+admin.site.register(Repayment)
