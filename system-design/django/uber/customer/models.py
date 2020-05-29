@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.db import models
 
-from utils.common_model import AuditLog
+from common.models import AuditLog
 
 
 class Customer(AuditLog):

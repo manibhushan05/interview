@@ -1,0 +1,26 @@
+Driver
+
+1. Driver register on xyz
+2. Driver can switch on/off
+3. Admin can verify/ban/reject
+4. Driver can approve/reject booking
+5. Driver can start and end ride
+
+Customer
+
+1. Customer can register on xyz
+2. Admin can ban customer
+3. Customer can book a cab
+4. Customer can update profile
+
+Vehicle
+
+1. Vehicle can be on leased/owned/vendor's
+2. Vehicle Cab/Auto/Bike
+
+
+
+
+
+
+
